@@ -41,19 +41,25 @@ p2Button.addEventListener('click', function() {
 
 resetButton.addEventListener("click",
     function() {
-        p1Score = 0;
-        p1Display.textContent = p1Score;
-        p2Score = 0;
-        p2Display.textContent = p2Score;
-        gameOver = false;
-        p1Display.classList.remove("winner");
-        p1Display.classList.remove("loser");
-        p2Display.classList.remove("winner");
-        p2Display.classList.remove("loser");
-
+        reset();
     });
+
+function reset() {
+    p1Score = 0;
+    p2Score = 0;
+    p1Display.textContent = p1Score;
+    p2Display.textContent = p2Score;
+    p1Display.classList.remove("winner");
+    p1Display.classList.remove("loser");
+    p2Display.classList.remove("winner");
+    p2Display.classList.remove("loser");
+    gameOver = false;
+};
 
 numInput.addEventListener("change",
     function() {
-        winningScoreDisplay.textContent = "Value Changed";
+        winningScoreDisplay.textContent = winningScore;
+        winningScore = Number(this.value);
+        winningScoreDisplay.textContent = this.value;
+        reset();
     });
