@@ -4,3 +4,20 @@
 .loser {
     color: red;
 }
+.container{
+    background-color: rgba(254, 254, 254, 0.75);
+    text-align: center;
+    margin: 50% auto;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgb(102, 162, 39);
+    padding: 5px;
+   
+}
+body{
+height: 100%;
+margin: auto;
+background-image: url("https://images.unsplash.com/photo-1434648957308-5e6a859697e8?auto=format&fit=crop&w=800&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+background-size: cover;
+background-position: center;
+}
+
